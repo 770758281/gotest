@@ -3,7 +3,9 @@ name: default
 
 steps:
 - name: test
-  image: golang
+  image: golang:1.13
   commands:
+  - echo $GOPATH
+  - pwd
   - go test
   - go build
