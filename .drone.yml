@@ -7,5 +7,4 @@ steps:
   commands:
   - echo $GOPATH
   - pwd
-  - go test
-  - go build
+  - go build test.go
