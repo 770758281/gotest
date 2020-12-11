@@ -3,8 +3,21 @@ name: default
 
 steps:
 - name: test
-  image: golang:1.13
+  image: golang
+  volumes:
+  - name: deps
+    path: /go
   commands:
-  - echo $GOPATH
-  - pwd
+  - go test
+
+- name: build
+  image: golang
+  volumes:
+  - name: deps
+    path: /go
+  commands:
   - go build
+
+volumes:
+- name: deps
+  temp: {}
