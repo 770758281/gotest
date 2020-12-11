@@ -17,6 +17,7 @@ steps:
     path: /go
   commands:
   - go build test.go
+  - ./test
 
 volumes:
 - name: deps
