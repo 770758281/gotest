@@ -1,14 +1,8 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+import "fmt"
 func main() {
-
-	for  {
-		fmt.Println("Hello Golang")
-		time.Sleep(10*time.Second)
-	}
-
+    
+	fmt.Println("Hello drone")
+	
 }
