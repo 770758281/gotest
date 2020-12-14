@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 func main() {
     
-	fmt.Println("Hello Drone5")
+	for{
+		fmt.Println("Hello Drone5")
+		time.Sleep(10*time.Second)
+	}
+	
 	
 }
