@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: test
-  image: golang:1.13
+  image: golang
   volumes:
   - name: deps
     path: /go
@@ -11,7 +11,7 @@ steps:
   - go test
 
 - name: build
-  image: golang:1.13
+  image: golang
   volumes:
   - name: deps
     path: /go
